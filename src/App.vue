@@ -42,7 +42,7 @@ export default {
     },
     Div(){
       api.get('/divisao/'+ parseFloat(this.n1)+'/'+ parseFloat(this.n2)).then((response) => {
-        this.result = response.data.result
+        this.result = response.data.result.toFixed(2);
       });
     }
  }
